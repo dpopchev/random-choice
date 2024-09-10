@@ -13,26 +13,9 @@
 # ---
 
 # %%
-MyClass = type('MyClass', (), {
-    'class_variable': 'Hello, World!',
-    '__init__': lambda self: print('Initializing MyClass'),
-    'my_method': lambda self: print('Hello from MyClass')
-})
-
+from random_choice.records import WeightedRecord
 
 # %%
-a = MyClass()
-
-# %%
-a.class_variable
-
-# %%
-b = MyClass()
-
-# %%
-a.class_variable, b.class_variable
-
-# %%
-MyClass.class_variable = 1000
+WeightedRecord(10, 0.2)
 
 # %%
