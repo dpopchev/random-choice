@@ -1,5 +1,3 @@
-from typing import Union
-
 import pytest
 
 from random_choice.records import Probability
