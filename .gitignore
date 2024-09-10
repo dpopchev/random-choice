@@ -1,4 +1,6 @@
+.ipynb_checkpoints
 .stamps
 .venv
 __pycache__
+notebook_pairs/ipynbs/
 random_choice.egg-info
