@@ -1,19 +1,33 @@
 # random_choice
-Elevator pitch.
-## Install
+
+Great package helping random generation of weighted probability samples.
+
+## Installation
+
+For starter clone this repo and get inside it.
+
 ```
-git clone --depth 1 <URL>
+git clone --depth 1 https://github.com/dpopchev/random-choice.git
 cd random-choice
-make development
+```
+
+### Install
+
+For development and stand alone purposes just:
+
+```
+make development pyseed=/path/to/python/or/leave/empty
 make check
 ```
-If more context is needed then rename section to `Installation`.
-Put details into `Requirements` and `Install` subsections.
-## Usage
-Place examples with expected output.
-Start with `Setup` subsection for configuration.
-Break intu sub-...subsections using scenario/feature names.
-## Acknowledgment
-- [makeareadme](https://www.makeareadme.com/)
+
+### Distribution
+
+Build the wheel file and use it with `pip install`
+
+```
+make dist
+ls -la dist
+```
+
 ## License
 [MIT](LICENSE)

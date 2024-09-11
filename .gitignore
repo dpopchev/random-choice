@@ -2,5 +2,6 @@
 .stamps
 .venv
 __pycache__
+dist
 notebook_pairs/ipynbs/
 random_choice.egg-info
