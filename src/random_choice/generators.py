@@ -13,6 +13,7 @@ class ProbabilityRecord(Protocol[T]):
 
 
 class RandomGen(Generic[T]):
+    """Infinite random sampling fed with sequence of probability records type"""
     _PROBABILITY_TOL: Final = 1e-6
 
     def __init__(self, probability_records: Sequence[ProbabilityRecord]):
@@ -23,7 +24,7 @@ class RandomGen(Generic[T]):
         self._gen = cycle(
             choices([r.data for r in probability_records],
                     weights=[r.probability for r in probability_records],
-                    k=10*len(probability_records))
+                    k=100*len(probability_records))
         )
 
     def next_data(self) -> T:
