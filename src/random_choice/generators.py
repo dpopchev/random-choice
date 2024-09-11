@@ -23,7 +23,7 @@ class RandomGen(Generic[T]):
         self._gen = cycle(
             choices([r.data for r in probability_records],
                     weights=[r.probability for r in probability_records],
-                    k=1000)
+                    k=10*len(probability_records))
         )
 
     def next_data(self) -> T:

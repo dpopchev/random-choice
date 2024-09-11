@@ -16,9 +16,9 @@ class ProbabilityRecord(NamedTuple):
 @pytest.fixture
 def three_records():
     return [
-        ProbabilityRecord(-1, 0.15),
-        ProbabilityRecord(0, 0.70),
-        ProbabilityRecord(1, 0.15)
+        ProbabilityRecord(-1, 1/3),
+        ProbabilityRecord(0, 1/3),
+        ProbabilityRecord(1, 1/3)
     ]
 
 
